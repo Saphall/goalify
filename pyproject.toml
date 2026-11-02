@@ -22,6 +22,10 @@ include = ["goalify*"]
 goalify = ["templates/*.html", "static/*.css", "static/*.js", "static/*.svg"]
 
 [dependency-groups]
+build = [
+    "pyinstaller>=6",
+    "pywebview>=5",
+]
 browser = [
     "playwright>=1.50,<2",
 ]
